@@ -20,9 +20,9 @@ Ações principais de um filósofo
 
 
 ## Estrutura de Sincronização Utilizada
-- **Mutexes `garfos[i]`**: para evitar que dois filósofos usem o mesmo garfo simultaneamente.
-- **Mutex `estado_mutex  e comida_mutex`**: protege a leitura e escrita dos estados dos filósofos e da comida restante.
-- **Condição `conds`**: avisa que um garfo foi liberado para os filósofos famintos.
+- **Mutexes: `garfos[i]`**: para evitar que dois filósofos usem o mesmo garfo simultaneamente.
+- **Mutex: `estado_mutex  e comida_mutex`**: protege a leitura e escrita dos estados dos filósofos e da comida restante.
+- **Condição: `conds`**: avisa que um garfo foi liberado para os filósofos famintos.
 
 ## Visualização
 
@@ -35,7 +35,7 @@ A cada mudança de estado (pensando, com fome, comendo ou indo embora), a simula
   - 😐 Com fome
   - 🍴 Comendo
   - 💤 Foi embora (com fome)
-  
+
 - No final, quanto cada filósofo comeu 
 
 ## Parâmetros que podem ser modificados
